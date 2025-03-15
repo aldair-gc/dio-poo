@@ -6,8 +6,6 @@
 classDiagram
   class IPad {
     <<interface>>
-    -String[] musicLibrary
-    -String selectedMusic
     +Void play()
     +Void pause()
     +Void selectMusic()
@@ -15,8 +13,6 @@ classDiagram
 
   class Phone {
     <<interface>>
-    -String phoneNumber
-    -String voiceMailNumber
     +Void call(String phoneNumber)
     +Void answer()
     +Void voiceMail()
@@ -24,8 +20,6 @@ classDiagram
 
   class Browser {
     <<interface>>
-    -String[] tabs
-    -String selectedTab
     +Void showPage(String url)
     +Void newTab(String url)
     +Void refreshPage()
